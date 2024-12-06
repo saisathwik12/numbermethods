@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>For Output Open console</h1>
+    <script>
+        //Task-1
+        //number Methods
+        // let num = "123hello"
+        // console.log(parseInt(num))
+        // let num2 = "123.6612611"
+        // console.log(parseFloat(num2))
+        // console.log(parseFloat(num2).toFixed(2))
+        // console.log(num2.toPrecision(4))
+
+        //Task-2
+        //36.ans
+        // let income = parseInt(prompt("Enter the monthly income: "))
+        // let expenses = [123,52,102,33]
+        // for(i=0;i<expenses.length;i++){
+        //     income -= expenses[i]
+        // }
+        // console.log("Balance",income)
+
+        //37.ans
+        // let distance = parseInt(prompt("Enter the distance : "))
+        // let fare =0;
+        // for(i=1;i<=distance;i++){
+        //     if(i<3){
+        //         fare += i*10
+        //     }
+        //     else{
+        //         fare += i*12
+        //     }
+        // }
+        // console.log(fare)
+
+        //38.ans
+        // let classes = parseInt(prompt("enter the number of classes : "))
+        // let attend = parseInt(prompt("enter the student attendence : "))
+        // let per = attend / classes * 100
+        // if(per >=75){
+        //     console.log("Student Attendence meets ",per+"%")
+        // }else{
+        //     console.log("Student not meets the minimum attendence")
+        // }
+
+        //39.ans
+        function checkSpeeding(vehicleSpeed, speedLimit) {
+        const speedBuffer = 5;
+        const allowedSpeed = speedLimit + speedBuffer;
+
+        if (vehicleSpeed > allowedSpeed) {
+            return true; 
+        } else {
+            return false; 
+        }
+        }
+        const vehicleSpeed = parseInt(prompt("Enter the Speed :"));
+        const speedLimit = parseInt(prompt("Enter the Speed Limit :"));
+
+        if (checkSpeeding(vehicleSpeed, speedLimit)) {
+        console.log("Speeding ticket issued!");
+        } else {
+        console.log("No speeding ticket.");
+        }
+
+        //40.ans
+        const amount = parseInt(prompt("Enter the amount :"))
+        const exchangeRate = parseInt(prompt("Enter the amount :"))
+        let converted = amount*exchangeRate;
+        console.log("Converted amount",converted)
+        
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
